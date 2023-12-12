@@ -4,9 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/keep-react/**/*.{js,jsx,ts,tsx}",
   ],
-  presets: [require("keep-react/src/keep-preset.js")],
   theme: {
     extend: {
       backgroundImage: {

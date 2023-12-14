@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <QueryProvider>
           <Navbar />
-          <div className="min-h-screen px-3 py-10 bg-gray-200">
+          <div className="min-h-screen px-3 py-10 bg-gray-50">
             <div className="mx-auto max-w-7xl">{children}</div>
           </div>
           <Footer />

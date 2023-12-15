@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import Footer from "@/components/footer/Footer";
+import NavbarComponent from "@/components/navbar/Navbar";
 import QueryProvider from "@/providers/QueryProvider";
+import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Banner from "./components/Banner";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,10 @@ export default function RootLayout({ children }) {
       <title>Create Next App</title>
       <body className={inter.className}>
         <QueryProvider>
-          <Navbar />
-          <div className="min-h-screen px-3 py-10 bg-gray-200">
-            <div className="mx-auto max-w-7xl">{children}</div>
+          <NavbarComponent />
+          <Banner />
+          <div className="px-3 bg-gray-50">
+            <div className="min-h-screen mx-auto max-w-7xl">{children}</div>
           </div>
           <Footer />
         </QueryProvider>

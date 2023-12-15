@@ -45,17 +45,15 @@ export default function Page() {
         <form onSubmit={formik.handleSubmit}>
           <div className="mb-2 space-y-4">
             <div className="space-y-1">
-              <Label value="Email or Phone" className="text-sm" />
+              <Label value="Email or Phone Number" className="text-sm" />
               <TextInput
                 id="email_or_phone"
                 name="email_or_phone"
                 value={formik.values.email_or_phone}
                 handleOnChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                placeholder="example@gmail.com"
+                placeholder="Enter email or phone number"
                 color="gray"
-                addon={<Envelope size={20} color="#5D5FEF" />}
-                addonPosition="left"
               />
               <FormikErrorBox formik={formik} field="email_or_phone" />
             </div>
@@ -72,8 +70,6 @@ export default function Page() {
                   placeholder="Minimum 8 characters"
                   color="gray"
                   type={showPass ? "text" : "password"}
-                  addon={<Lock size={20} color="#5D5FEF" />}
-                  addonPosition="left"
                 />
                 <div
                   className="absolute cursor-pointer top-1/2 right-2"
@@ -101,9 +97,6 @@ export default function Page() {
           >
             Login
           </Button>
-          {/* <button type="submit" className="bg-red-500">
-            login
-          </button> */}
         </form>
 
         <div className="flex justify-center gap-1 mt-4">
@@ -119,8 +112,7 @@ export default function Page() {
           <div class="flex-grow border-t border-[#D1D5DB]"></div>
         </div>
 
-        <div className="flex flex-col items-center space-y-2">
-          <p className="text-[#4B5563]">Login with</p>
+        <div className="flex flex-col items-center">
           <div className="flex gap-4">
             <Button
               type="outlineGray"

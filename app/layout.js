@@ -4,6 +4,7 @@ import QueryProvider from "@/providers/QueryProvider";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Banner from "./components/Banner";
+import StaticInfo from "./components/StaticInfo";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <QueryProvider>
           <NavbarComponent />
           <Banner />
+          <StaticInfo />
           <div className="px-3 bg-gray-50">
             <div className="min-h-screen mx-auto max-w-7xl">{children}</div>
           </div>

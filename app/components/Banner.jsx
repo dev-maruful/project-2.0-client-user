@@ -30,7 +30,7 @@ function Banner() {
   if (pathname !== "/") return "";
 
   return (
-    <div className="bg-gradient-to-r from-[#e3e3ec] to-[#cbcbe2] mb-10">
+    <div className="bg-gradient-to-r from-[#e3e3ec] to-[#cbcbe2]">
       <Carousel
         className="mx-auto max-w-7xl"
         responsive={responsive}

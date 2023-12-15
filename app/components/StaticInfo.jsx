@@ -8,7 +8,7 @@ function StaticInfo() {
 
   return (
     <div className="py-10 bg-white">
-      <div className="flex flex-col gap-4 mx-auto max-w-7xl md:gap-0 md:flex-row">
+      <div className="flex flex-col gap-4 px-3 mx-auto max-w-7xl md:gap-0 md:flex-row">
         <div className="flex items-center justify-center flex-1 gap-4">
           <div className="p-4 flex justify-center items-center rounded-full bg-[#EEF2FF]">
             <FaTruck className="w-4 h-4 text-[#5D5FEF]" />
@@ -31,7 +31,7 @@ function StaticInfo() {
             </p>
           </div>
         </div>
-        <div className="flex items-center flex-1 gap-4">
+        <div className="flex items-center justify-center flex-1 gap-4">
           <div className="p-4 flex justify-center items-center rounded-full bg-[#EEF2FF]">
             <FaTruck className="w-4 h-4 text-[#5D5FEF]" />
           </div>

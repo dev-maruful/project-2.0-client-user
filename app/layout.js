@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
           <Banner />
           <StaticInfo />
           <div className="px-3 bg-gray-50">
-            <div className="min-h-screen mx-auto max-w-7xl">{children}</div>
+            <div className="min-h-screen pb-20 mx-auto max-w-7xl">
+              {children}
+            </div>
           </div>
           <Footer />
         </QueryProvider>

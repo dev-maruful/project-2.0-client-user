@@ -32,7 +32,7 @@ function Banner() {
   return (
     <div className="bg-gradient-to-r from-[#e3e3ec] to-[#cbcbe2]">
       <Carousel
-        className="mx-auto max-w-7xl"
+        className="px-3 mx-auto max-w-7xl"
         responsive={responsive}
         removeArrowOnDeviceType={[
           "tablet",

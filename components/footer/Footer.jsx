@@ -6,7 +6,7 @@ import Logo from "../Logo";
 
 function Footer() {
   return (
-    <footer className="w-full mx-auto max-w-7xl">
+    <footer className="w-full px-3 pt-10 mx-auto max-w-7xl">
       <div className="flex flex-col w-full gap-4 px-8 py-4 md:gap-0 md:px-0 md:flex-row">
         <div className="flex flex-col flex-1 gap-4">
           <Logo />

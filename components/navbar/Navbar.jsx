@@ -10,12 +10,12 @@ export default function NavbarComponent() {
     <header className=" bg-gray-50">
       <nav className="">
         <div className="hidden md:block">
-          <div className="flex items-center py-6 mx-auto max-w-7xl">
+          <div className="flex items-center px-3 py-6 mx-auto max-w-7xl ">
             <Logo />
             <div className="w-3/5">
               <SearchBarComponent />
             </div>
-            <div className="flex justify-center w-1/5 gap-4">
+            <div className="flex justify-end w-1/5 gap-4">
               <Button type="primary" size="sm">
                 Login
               </Button>
@@ -25,7 +25,7 @@ export default function NavbarComponent() {
             </div>
           </div>
           <hr className="bg-gray-200" />
-          <ul className="flex items-center gap-4 mx-auto max-w-7xl">
+          <ul className="flex items-center gap-4 px-3 mx-auto max-w-7xl">
             <li>
               <Link href="/">Home</Link>
             </li>
